@@ -1,11 +1,29 @@
 .main-container {
-    position: relative;
-    left:30%;
-    top: 5%;
+    position: absolute;
+    left: 40%;
 }
 .main-photo{
     position: relative;
-    left: 20%;
+    left: 10%;
     top: 20%;
 }
 
+#logo-image > img{
+    position: relative;
+    left: 20%;
+    width: 500px;
+    height: 300px;
+}
+
+#main-phrase > img{
+    position: relative;
+    left: 10%;
+    top: 100px;
+    height: 300px;
+    width: 700px;
+}
+#foot-line > img{
+    position: relative;
+    top: 180px;
+    width: 200px;
+}

@@ -4,7 +4,7 @@ import { animate, style, trigger, state, transition } from '@angular/animations'
 @Component({
     selector: 'main-photo',
     template: `<div class="picture"><img src="img/{{image}}" [@visibilityChanged]="visibility"></div>`,
-    styles: [`img {width: 600; height: 600; }`],
+    styles: [`img {width: 500; height: 500; }`],
     animations: [
         trigger('visibilityChanged', [
             state('visible', style({ opacity: 1 })),
