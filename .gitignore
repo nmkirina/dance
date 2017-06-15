@@ -7,10 +7,8 @@ app/child.component.js
 app/child.component.js.map
 app/main.js
 app/main.js.map
-app/mainMenu.component.js
-app/mainMenu.component.js.map
-app/mainPhoto.component.js
-app/mainPhoto.component.js.map
+app/routing.js
+app/routing.js.map
 app/about/about.component.js
 app/about/about.component.js.map
 app/contact/contact.component.js
@@ -27,4 +25,7 @@ app/notfound/notfound.component.js
 app/notfound/notfound.component.js.map
 app/staff/staff.component.js
 app/staff/staff.component.js.map
-
+app/mainMenu/mainMenu.component.js
+app/mainMenu/mainMenu.component.js.map
+app/mainPhoto/mainPhoto.component.js
+app/mainPhoto/mainPhoto.component.js.map
