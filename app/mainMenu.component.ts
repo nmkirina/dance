@@ -3,13 +3,14 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'main-menu',
     template: `<ul class="nav nav-pills main-menu">
-                <li><a href="#">Home</a></li>
-                <li class="menu-item"><a href="#">About</a></li>
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Dances</a></li>
-                <li class="active"><a href="#">History</a></li>
-                <li><a href="#">Galary</a></li>
-                <li><a href="#">Contact</a></li>
+                <li routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}"><a routerLink="">Home</a></li>
+                <li routerLinkActive="active"><a routerLink="/about">About</a></li>
+                <li routerLinkActive="active"><a routerLink="/staff">Staff</a></li>
+                <li routerLinkActive="active"><a routerLink="/dances">Dances</a></li>
+                <li routerLinkActive="active"><a routerLink="/history">History</a></li>
+                <li routerLinkActive="active"><a routerLink="/galary">Galary</a></li>
+                <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
               </ul>
               `,
     styles: [`.main-menu > li{

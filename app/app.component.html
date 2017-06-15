@@ -1,14 +1,17 @@
-<div class="col-lg-3 main-photo">
+<div class="col-lg-3 main-photo" *ngIf="mainPage">
     <main-photo></main-photo>
 </div>
 <div class="col-lg-6 main-container">
-    <div id="logo-image">
+    <div id="logo-image" *ngIf="mainPage">
         <img src="img/logo-fresky.jpg">
     </div>
     <div>
         <main-menu></main-menu>
     </div>
-    <div id="main-phrase">
+    <div class="pages">
+        <router-outlet></router-outlet>
+    </div>
+    <div id="main-phrase" *ngIf="mainPage">
         <img src="img/phrase-fresky.jpg">
     </div>
     <div id="foot-line">
