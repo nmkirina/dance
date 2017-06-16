@@ -1,13 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
     selector: 'staff',
-    template: '<div id="staff">Staff</div>',
-    styles: [`#staff{color: red;}`]
+    templateUrl: "app/staff/staff.component.html",
+    styles: [`
+                .staff-li>img{
+                    width: 100px;
+                    height: 50px;    
+                }
+                #staff{
+                    position: relative;
+                    top: 200px;
+                    left: 100px;
+                }
+                
+                        `]
 })
 export class StaffComponent implements OnInit {
-    mainPhoto: boolean = false;   
+    items = ["Ivan Ivanov", "Ivan Petrov", "Stepan Lugkov"];
     constructor(){}
     ngOnInit(){
         console.log('Staff');

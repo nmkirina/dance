@@ -13,7 +13,9 @@ import { HistoryComponent } from './history/history.component';
 import { StaffComponent } from './staff/staff.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { HomeComponent } from './home/home.component';
+import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
+//import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 
 const appRoutes: Routes = [
         {path: '', component: HomeComponent},
@@ -23,6 +25,7 @@ const appRoutes: Routes = [
         {path: 'galary', component: GalaryComponent},
         {path: 'history', component: HistoryComponent},
         {path: 'staff', component: StaffComponent},
+        {path: 'news', component: NewsComponent},
         {path: '**', component: NotfoundComponent}
     ];
 @NgModule({
@@ -40,6 +43,7 @@ const appRoutes: Routes = [
         ContactComponent,
         DancesComponent,
         GalaryComponent,
+        NewsComponent,
         HistoryComponent,
         StaffComponent,
         NotfoundComponent
