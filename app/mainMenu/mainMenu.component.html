@@ -1,10 +1,11 @@
 <ul class="nav nav-pills main-menu">
     <li routerLinkActive="active"
-    [routerLinkActiveOptions]="{exact:true}"><a routerLink="">Home</a></li>
-    <li routerLinkActive="active"><a routerLink="/about">About</a></li>
-    <li routerLinkActive="active"><a routerLink="/staff">Staff</a></li>
-    <li routerLinkActive="active"><a routerLink="/dances">Dances</a></li>
-    <li routerLinkActive="active"><a routerLink="/history">History</a></li>
-    <li routerLinkActive="active"><a routerLink="/galary">Galary</a></li>
-    <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
+    [routerLinkActiveOptions]="{exact:true}"><a routerLink="" (click)="change(true)">Home</a></li>
+    <li routerLinkActive="active"><a routerLink="/about" (click)="change(false)">About</a></li>
+    <li routerLinkActive="active"><a routerLink="/staff" (click)="change(false)">Staff</a></li>
+    <li routerLinkActive="active"><a routerLink="/dances" (click)="change(false)">Dances</a></li>
+    <li routerLinkActive="active"><a routerLink="/history" (click)="change(false)">History</a></li>
+    <li routerLinkActive="active"><a routerLink="/galary" (click)="change(false)">Galary</a></li>
+    <li routerLinkActive="active"><a routerLink="/contact" (click)="change(false)" >Contact</a></li>
 </ul>
+<!--<button (click)="change(false)">button</button>-->

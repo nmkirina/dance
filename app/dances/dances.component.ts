@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
     styles: [`#dances{color: red;}`]
 })
 export class DancesComponent implements OnInit {
-    mainPage: boolean = false;   
     constructor(){}
     ngOnInit(){
         console.log('dances');

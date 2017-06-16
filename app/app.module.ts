@@ -44,7 +44,7 @@ const appRoutes: Routes = [
         StaffComponent,
         NotfoundComponent
           ],
-    bootstrap:    [ AppComponent ]
+    bootstrap:    [ AppComponent ],
 })
 export class AppModule { 
     constructor() {}

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
     selector: 'history',
@@ -7,8 +6,7 @@ import { Router } from '@angular/router';
     styles: [`#history{color: red;}`]
 })
 export class HistoryComponent implements OnInit {
-    mainPage: boolean = false;
-        ngOnInit(){
+    ngOnInit(){
         console.log('History');
     }
 }
