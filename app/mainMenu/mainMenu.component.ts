@@ -6,8 +6,8 @@ import { Component, Output, EventEmitter  } from '@angular/core';
     styleUrls: ["app/mainMenu/mainMenu.component.css"],
 })
 export class MainMenuComponent {
-    @Output() onChanged = new EventEmitter<boolean>();
-    change(flag:boolean){
+    @Output() onChanged = new EventEmitter<string>();
+    change(flag:string){
         this.onChanged.emit(flag);
     }
 }

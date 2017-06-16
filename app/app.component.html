@@ -1,9 +1,15 @@
-<div class="col-lg-3 main-photo" *ngIf="mainPage">
-    <main-photo></main-photo>
+<div class="col-lg-3 main-photo">
+     <div  [@visibilityChanged]="visibility">
+        <main-photo></main-photo>
+    </div>
+    <div *ngIf="visibility  == 'hidden'">
+        <img src="img/logo-fresky.jpg" >
+    </div>
 </div>
+
 <div class="col-lg-6 main-container">
-    <div id="logo-image" *ngIf="mainPage">
-        <img src="img/logo-fresky.jpg">
+    <div id="logo-image">
+        <img src="img/logo-fresky.jpg"  [@visibilityChanged]="visibility">
     </div>
     <div>
         <main-menu (onChanged)="onChanged($event)"></main-menu>
@@ -11,8 +17,8 @@
     <div class="pages">
         <router-outlet></router-outlet>
     </div>
-    <div id="main-phrase" *ngIf="mainPage">
-        <img src="img/phrase-fresky.jpg">
+    <div id="main-phrase">
+        <img src="img/phrase-fresky.jpg" [@visibilityChanged]="visibility">
     </div>
     <div id="foot-line">
         <img src="img/foot-line.jpg">

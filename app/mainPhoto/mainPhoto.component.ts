@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
 import { animate, style, trigger, state, transition } from '@angular/animations';
 
 @Component({
@@ -19,7 +19,7 @@ export class MainPhotoComponent {
     image: string = '0.jpg';
     visibility: string = "hidden";
     i: number = 0;
-    imageCount:number = 11;
+    imageCount: number = 11;
         
     ngOnInit(){
         setInterval(() => {
