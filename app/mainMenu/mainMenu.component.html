@@ -1,12 +1,31 @@
-<ul class="nav nav-pills main-menu">
-    <li routerLinkActive="active"
-    [routerLinkActiveOptions]="{exact:true}"><a routerLink="" (click)="change('visible')">Home</a></li>
-    <li routerLinkActive="active"><a routerLink="/about" (click)="change('hidden')">About</a></li>
-    <li routerLinkActive="active"><a routerLink="/staff" (click)="change('hidden')">Staff</a></li>
-    <li routerLinkActive="active"><a routerLink="/dances" (click)="change('hidden')">Dances</a></li>
-    <li routerLinkActive="active"><a routerLink="/history" (click)="change('hidden')">History</a></li>
-    <li routerLinkActive="active"><a routerLink="/galary" (click)="change('hidden')">Galary</a></li>
-    <li routerLinkActive="active"><a routerLink="/news" (click)="change('hidden')">News</a></li>
-    <li routerLinkActive="active"><a routerLink="/contact" (click)="change('hidden')" >Contact</a></li>
-</ul>
-<!--<button (click)="change(false)">button</button>-->
+<section class="main-menu" id="Shylock">
+    <nav class="menu menu--shylock">
+        <ul class="menu__list">
+            <li class="menu__item" routerLinkActive="menu__item--current" [routerLinkActiveOptions]="{exact:true}">
+                <a class="menu__link " routerLink="" (click)="change('visible')">Home</a>
+            </li>
+            <li class="menu__item" routerLinkActive="menu__item--current">
+                <a class="menu__link" routerLink="/about" (click)="change('hidden')">About</a>
+            </li>
+            <li class="menu__item" routerLinkActive="menu__item--current">
+                <a class="menu__link" routerLink="/staff" (click)="change('hidden')">Staff</a>
+            </li>
+            <li class="menu__item" routerLinkActive="menu__item--current">
+                <a class="menu__link" routerLink="/dances" (click)="change('hidden')">Dances</a>
+            </li>
+            <li class="menu__item" routerLinkActive="menu__item--current">
+                <a class="menu__link" routerLink="/history" (click)="change('hidden')">History</a>
+            </li>
+            <li class="menu__item" routerLinkActive="menu__item--current">
+                <a class="menu__link" routerLink="/galary" (click)="change('hidden')">Galary</a>
+            </li>
+            <li class="menu__item" routerLinkActive="menu__item--current">
+                <a class="menu__link" routerLink="/news" (click)="change('hidden')">News</a>
+            </li>
+            <li class="menu__item" routerLinkActive="menu__item--current">
+                <a class="menu__link" routerLink="/contact" (click)="change('hidden')">Contact</a>
+            </li>
+            <li class="menu__lines"></li>
+        </ul>
+    </nav>
+</section>
