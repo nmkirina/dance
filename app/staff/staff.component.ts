@@ -8,11 +8,6 @@ import { Component, OnInit } from '@angular/core';
                     width: 100px;
                     height: 50px;    
                 }
-                #staff{
-                    position: relative;
-                    top: 200px;
-                    left: 100px;
-                }
                 
                         `]
 })

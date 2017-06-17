@@ -15,7 +15,6 @@ import { Component, OnInit } from '@angular/core';
      vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>`,
     styles: [`#about{
                 position: relative;
-                top: 200px;
                 left: 20px;
                 }`]
 })

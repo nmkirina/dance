@@ -15,6 +15,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
+import { HttpModule } from '@angular/http';
 //import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 
 const appRoutes: Routes = [
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
         BrowserModule, 
         BrowserAnimationsModule, 
         RouterModule.forRoot(appRoutes),
-        routing ],
+        routing,
+        HttpModule ],
     declarations: [ 
         AppComponent, 
         MainPhotoComponent, 

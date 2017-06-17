@@ -9,8 +9,6 @@ import { Component, OnInit } from '@angular/core';
                 }
                 #dances{
                     position: relative;
-                    top: 200px;
-                    left: 100px;
                 }`]
 })
 export class DancesComponent implements OnInit {
