@@ -13,7 +13,7 @@ import { animate, style, trigger, state, transition } from '@angular/animations'
         ])
     ],
 })
-export class AppComponent{ 
+export class AppComponent { 
     
     visibility: string = 'visible';
     onChanged(flag:string){

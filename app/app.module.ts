@@ -16,7 +16,6 @@ import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
-//import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 
 const appRoutes: Routes = [
         {path: '', component: HomeComponent},
