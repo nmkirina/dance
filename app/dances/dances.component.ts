@@ -20,8 +20,7 @@ export class DancesComponent implements OnInit {
     constructor(private httpService: HttpService){}
     ngOnInit(){
         this.httpService.getDances().subscribe(error => {console.log(error)});
-        
-        this.httpService.getDances().subscribe((data) => {this.items = data;});
+        this.httpService.getDances().subscribe((data) => {this.items = data.result;});
     }
     
 }
