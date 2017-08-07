@@ -23,8 +23,8 @@ app/contact/contact.component.js
 app/contact/contact.component.js.map
 app/dances/dances.component.js
 app/dances/dances.component.js.map
-app/galary/galary.component.js
-app/galary/galary.component.js.map
+app/gallery/gallery.component.js
+app/gallery/gallery.component.js.map
 app/history/history.component.js
 app/history/history.component.js.map
 app/home/home.component.js

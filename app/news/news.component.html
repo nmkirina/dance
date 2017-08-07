@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let item of items; let i = index">
+        <div>
+        <img src="{{item.photo}}">
+        {{item.date}}
+        </div>
+        <a (click)=toggle(item)>{{item.title}}</a>
+        <div *ngIf="item.opened">{{item.text}}</div>
+    </li>
+</ul>

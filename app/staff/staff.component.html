@@ -1,9 +1,9 @@
 <div id="staff">
     <ul>
         <li *ngFor="let item of items" class="staff-li">
-            <img src="img/staff/1.jpg">
-            <span><p>{{item}}</p></span><br>
-            <span>Has been Dancing from jule 2013</span>
+            <img src="{{item.photo}}">
+            <span><p>{{item.name}}</p></span><br>
+            <span>Has been Dancing from {{item.start_date}}</span>
         </li>
     </ul>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
     selector: 'staff',
@@ -9,13 +10,14 @@ import { Component, OnInit } from '@angular/core';
                     height: 50px;    
                 }
                 
-                        `]
+                        `],
+    providers: [ HttpService ]
 })
 export class StaffComponent implements OnInit {
-    items = ["Ivan Ivanov", "Ivan Petrov", "Stepan Lugkov"];
-    constructor(){}
+    items: any;
+    constructor(private httpService: HttpService){}
     ngOnInit(){
-        console.log('Staff');
+        this.httpService.getStaff().subscribe((data) => {console.log(data.result);this.items = data.result;});
     }
 }
 

@@ -19,38 +19,32 @@ export class HttpService{
                        .catch((error:any) =>{return Observable.throw(error);});
        
    }
-   
-   getDances(){
-      let result: Observable<Response> = this.http.post(this.url + 'dances', null, {headers: this.headers})
+   getObject(name: string){
+       
+        let result: Observable<Response> = this.http.post(this.url + name, null, {headers: this.headers})
                                                 .map((resp:Response)=>resp.json())
                                                 .catch((error:any) =>{return Observable.throw(error);});
                        
-      return result;
+        return result;
+   }
+   getDances(){
+      return this.getObject('dances');
    }
    
    getHistory(){
-       let result: Observable<Response> = this.http.post(this.url + 'history', null, {headers: this.headers})
-                                                .map((resp:Response)=>resp.json())
-                                                .catch((error:any) =>{return Observable.throw(error);});
-       return result;
+       return this.getObject('history');
    }
    
    getGallery(){
-       let result: Observable<Response> = this.http.post(this.url + 'gallery', null, {headers: this.headers})
-                                                .map((resp:Response)=>resp.json())
-                                                .catch((error:any) =>{return Observable.throw(error);});
-       return result;
+       return this.getObject('gallery');
    }
+   
    getNews(){
-       let result: Observable<Response> = this.http.post(this.url + 'news', null, {headers: this.headers})
-                                                .map((resp:Response)=>resp.json())
-                                                .catch((error:any) =>{return Observable.throw(error);});
-       return result;
+       return this.getObject('news');
    }
+   
    getStaff(){
-       let result: Observable<Response> = this.http.post(this.url + 'staff', null, {headers: this.headers})
-                                                .map((resp:Response)=>resp.json())
-                                                .catch((error:any) =>{return Observable.throw(error);});
-       return result;
+       return this.getObject('staff');
    }
+   
 }
