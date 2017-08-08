@@ -4,7 +4,7 @@ import { HttpService } from '../http.service';
 @Component({
     selector: 'gallery',
     template: `<div id="gallery">
-                <img *ngFor="let item of items" src='{{item.name}}'>
+                <img *ngFor="let item of items" src='{{item.fullurl}}' width="100">
                 </div>`,
     styles: [`#gallery{color: red;}`],
     providers: [ HttpService ]

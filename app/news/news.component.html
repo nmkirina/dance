@@ -1,7 +1,7 @@
 <ul>
     <li *ngFor="let item of items; let i = index">
         <div>
-        <img src="{{item.photo}}">
+        <img src="{{item.fullurl}}" width="100">
         {{item.date}}
         </div>
         <a (click)=toggle(item)>{{item.title}}</a>
