@@ -2,18 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
 
 @Component({
-    selector: 'gallery',
-    template: `<div id="gallery">
-                <img *ngFor="let item of items" src='{{item.fullurl}}' width="100">
-                </div>`,
-    styles: [`#gallery{color: red;}`],
+    selector: 'gallery1',
+    template: `<div id="gallery1">
+                  <gallery [metadataUri]="'./app/gallery/data.json'"></gallery>  
+                </div>
+               `,
     providers: [ HttpService ]
 })
 export class GalleryComponent implements OnInit {
     items: any;
+    images: any;
+    
     constructor(private httpService: HttpService){}
     ngOnInit(){
         
-        this.httpService.getGallery().subscribe((data) => {console.log(data.result); this.items = data.result;});
+//        this.httpService.getGallery().subscribe((data) => 
+//        {
+//            this.items = data.result;
+//        });
     }
 }

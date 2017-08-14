@@ -22,7 +22,10 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       // остальные пакеты
       'rxjs':                      'npm:rxjs',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+      'angular2-image-gallery': 'npm:angular2-image-gallery',
+      'web-animations-js': 'npm:web-animations-js/web-animations.min.js',
+      'hammerjs': 'npm:hammerjs/hammer.js',
     },
     // пакеты, которые указывают загрузчику System, как загружать файлы без имени и расширения
     packages: {
@@ -32,7 +35,11 @@
       },
       rxjs: {
         defaultExtension: 'js'
-      }
+    },
+    'angular2-image-gallery': {
+        main: './index.js',
+        defaultExtension: 'js'
+    }
     }
   });
 })(this);

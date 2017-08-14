@@ -1,0 +1,78 @@
+[
+  {
+    "preview_xxs": {
+      "path": "http://admin.dance.local/gallery/vEa07ddtJcpc_742.png",
+      "width": 500,
+      "height": 375
+    },
+    "preview_xs": {
+      "path": "http://admin.dance.local/gallery/vEa07ddtJcpc_742.png",
+      "width": 1024,
+      "height": 768
+    },
+    "preview_s": {
+      "path": "http://admin.dance.local/gallery/vEa07ddtJcpc_742.png",
+      "width": 1440,
+      "height": 1080
+    },
+    "preview_m": {
+      "path": "http://admin.dance.local/gallery/vEa07ddtJcpc_742.png",
+      "width": 2133,
+      "height": 1600
+    },
+    "preview_l": {
+      "path": "http://admin.dance.local/gallery/vEa07ddtJcpc_742.png",
+      "width": 2880,
+      "height": 2160
+    },
+    "preview_xl": {
+      "path": "http://admin.dance.local/gallery/vEa07ddtJcpc_742.png",
+      "width": 3840,
+      "height": 2880
+    },
+    "raw": {
+      "path": "http://admin.dance.local/gallery/vEa07ddtJcpc_742.png",
+      "width": 1400,
+      "height": 1050
+    },
+    "dominantColor": "#a6a6a6"
+  },
+  {
+    "preview_xxs": {
+      "path": "http://admin.dance.local/gallery/uSZfX3pOu01r_229.jpeg",
+      "width": 500,
+      "height": 375
+    },
+    "preview_xs": {
+      "path": "http://admin.dance.local/gallery/uSZfX3pOu01r_229.jpeg",
+      "width": 1024,
+      "height": 768
+    },
+    "preview_s": {
+      "path": "http://admin.dance.local/gallery/uSZfX3pOu01r_229.jpeg",
+      "width": 1440,
+      "height": 1080
+    },
+    "preview_m": {
+      "path": "http://admin.dance.local/gallery/uSZfX3pOu01r_229.jpeg",
+      "width": 2133,
+      "height": 1600
+    },
+    "preview_l": {
+      "path": "http://admin.dance.local/gallery/uSZfX3pOu01r_229.jpeg",
+      "width": 2880,
+      "height": 2160
+    },
+    "preview_xl": {
+      "path": "http://admin.dance.local/gallery/uSZfX3pOu01r_229.jpeg",
+      "width": 3840,
+      "height": 2880
+    },
+    "raw": {
+      "path": "http://admin.dance.local/gallery/uSZfX3pOu01r_229.jpeg",
+      "width": 1400,
+      "height": 1050
+    },
+    "dominantColor": "#a6a6a6"
+  }
+]

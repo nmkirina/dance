@@ -16,6 +16,11 @@ import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+
+import 'web-animations-js';
+import 'hammerjs';
+import 'web-animations-js';
 
 const appRoutes: Routes = [
         {path: '', component: HomeComponent},
@@ -34,7 +39,8 @@ const appRoutes: Routes = [
         BrowserAnimationsModule, 
         RouterModule.forRoot(appRoutes),
         routing,
-        HttpModule ],
+        HttpModule,
+        Angular2ImageGalleryModule ],
     declarations: [ 
         AppComponent, 
         MainPhotoComponent, 
