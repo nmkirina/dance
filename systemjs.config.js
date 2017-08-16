@@ -26,6 +26,7 @@
       'angular2-image-gallery': 'npm:angular2-image-gallery',
       'web-animations-js': 'npm:web-animations-js/web-animations.min.js',
       'hammerjs': 'npm:hammerjs/hammer.js',
+      '@agm/core': 'npm:@agm/core/core.umd.js'
     },
     // пакеты, которые указывают загрузчику System, как загружать файлы без имени и расширения
     packages: {

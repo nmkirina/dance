@@ -17,6 +17,7 @@ import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+import {AgmCoreModule} from '@agm/core';
 
 import 'web-animations-js';
 import 'hammerjs';
@@ -40,7 +41,10 @@ const appRoutes: Routes = [
         RouterModule.forRoot(appRoutes),
         routing,
         HttpModule,
-        Angular2ImageGalleryModule ],
+        Angular2ImageGalleryModule,
+        AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAbEgdQZwCeCSu--qk5L9iXc7FT-cWdlms'})
+       ],
     declarations: [ 
         AppComponent, 
         MainPhotoComponent, 
