@@ -7,6 +7,7 @@ var dances_component_1 = require("./dances/dances.component");
 var gallery_component_1 = require("./gallery/gallery.component");
 var history_component_1 = require("./history/history.component");
 var staff_component_1 = require("./staff/staff.component");
+//import { PersonComponent } from './person/person.component';
 var notfound_component_1 = require("./notfound/notfound.component");
 var routes = [
     { path: '', component: home_component_1.HomeComponent },
@@ -16,6 +17,7 @@ var routes = [
     { path: 'gallery', component: gallery_component_1.GalleryComponent },
     { path: 'history', component: history_component_1.HistoryComponent },
     { path: 'staff', component: staff_component_1.StaffComponent },
+    //  { path: 'person', component: PersonComponent},
     { path: 'notfound', component: notfound_component_1.NotfoundComponent },
 ];
 exports.routing = router_1.RouterModule.forRoot(routes);

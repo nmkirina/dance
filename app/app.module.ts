@@ -11,6 +11,7 @@ import { DancesComponent } from './dances/dances.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HistoryComponent } from './history/history.component';
 import { StaffComponent } from './staff/staff.component';
+import { PersonComponent } from './person/person.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
         {path: 'gallery', component: GalleryComponent},
         {path: 'history', component: HistoryComponent},
         {path: 'staff', component: StaffComponent},
+//        {path: 'person', component: PersonComponent},
         {path: 'news', component: NewsComponent},
         {path: '**', component: NotfoundComponent}
     ];

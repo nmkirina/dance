@@ -1,9 +1,9 @@
-<div class="col-lg-3 main-photo">
+<div class="col-lg-1 main-photo">
      <div  [@visibilityChanged]="visibility">
         <main-photo></main-photo>
     </div>
     <div *ngIf="visibility  == 'hidden'">
-        <img src="img/logo-fresky.jpg" >
+        <img src="img/logo-fresky.jpg" id="left-logo">
     </div>
 </div>
 
@@ -19,8 +19,5 @@
     </div>
     <div id="main-phrase">
         <img src="img/phrase-fresky.jpg" [@visibilityChanged]="visibility">
-    </div>
-    <div id="foot-line">
-        <img src="img/foot-line.jpg">
     </div>
 </div>
