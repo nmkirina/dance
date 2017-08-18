@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { animate, style, trigger, state, transition } from '@angular/animations';
 
 @Component({
@@ -13,9 +13,14 @@ import { animate, style, trigger, state, transition } from '@angular/animations'
         ])
     ],
 })
-export class AppComponent { 
+export class AppComponent implements OnInit{ 
     
     visibility: string = 'visible';
+    ngOnInit(){
+        if(window.location.pathname != '/') {
+            this.visibility = 'hidden';
+        }
+    }
     onChanged(flag:string){
         this.visibility = flag;
     }
