@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_service_1 = require("../http.service");
-//@ViewChild('text')
 var NewsComponent = (function () {
     function NewsComponent(httpService) {
         this.httpService = httpService;
@@ -37,7 +36,7 @@ NewsComponent = __decorate([
     core_1.Component({
         selector: 'news',
         templateUrl: 'app/news/news.component.html',
-        styles: ["#news{color: red;}"],
+        styleUrls: ["app/style/main.css", "app/news/news.component.css"],
         providers: [http_service_1.HttpService]
     }),
     __metadata("design:paramtypes", [http_service_1.HttpService])

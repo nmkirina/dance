@@ -1,11 +1,10 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
 
-//@ViewChild('text')
 @Component({
     selector: 'news',
     templateUrl: 'app/news/news.component.html',
-    styles: [`#news{color: red;}`],
+    styleUrls: ["app/style/main.css", "app/news/news.component.css"],
      providers: [HttpService]
 })
 export class NewsComponent implements OnInit {

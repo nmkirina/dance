@@ -1,10 +1,12 @@
-<ul>
-    <li *ngFor="let item of items; let i = index">
-        <div>
-        <img src="{{item.fullurl}}" width="100">
-        {{item.date}}
+<div *ngFor="let item of items; let i = index" class="news-block">
+    <img src="{{item.fullurl}}" class="content-image">
+    <span>
+        <p>
+        <a (click)=toggle(item)><b>{{item.title}}</b></a>
+        </p>
+        <div *ngIf="item.opened">
+            <p><b>{{item.title}}, {{item.date}}</b></p>
+            {{item.text}}
         </div>
-        <a (click)=toggle(item)>{{item.title}}</a>
-        <div *ngIf="item.opened">{{item.text}}</div>
-    </li>
-</ul>
+    </span>
+</div>
