@@ -1,0 +1,6 @@
+<div *ngFor="let item of items" class="staff-li">
+    <a [routerLink]="['dance', item._id.$oid]">
+        <img src="{{item.fullurl}}" class="content-image">
+    </a>
+    <p>{{item.name}}</p>
+</div>

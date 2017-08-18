@@ -1,8 +1,6 @@
     <div *ngFor="let item of items" class="staff-li">
         <a [routerLink]="['person', item._id.$oid]">
-        <img src="{{item.fullurl}}">
+        <img src="{{item.fullurl}}" class='content-image'>
         </a>
         <p>{{item.name}}</p>
-        <!--<span>В танцах с item.start_date</span>-->
-        
     </div>

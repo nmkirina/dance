@@ -12,6 +12,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HistoryComponent } from './history/history.component';
 import { StaffComponent } from './staff/staff.component';
 import { PersonComponent } from './person/person.component';
+import { DanceComponent } from './dance/dance.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
         {path: 'history', component: HistoryComponent},
         {path: 'staff', component: StaffComponent},
         {path: 'staff/person/:id', component: PersonComponent},
+        {path: 'dances/dance/:id', component: DanceComponent},
         {path: 'news', component: NewsComponent},
         {path: '**', component: NotfoundComponent}
     ];
@@ -55,6 +57,7 @@ const appRoutes: Routes = [
         AboutComponent,
         ContactComponent,
         DancesComponent,
+        DanceComponent,
         GalleryComponent,
         NewsComponent,
         HistoryComponent,

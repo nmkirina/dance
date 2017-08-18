@@ -4,27 +4,7 @@ import { HttpService } from '../http.service';
 @Component({
     selector: 'staff',
     templateUrl: "app/staff/staff.component.html",
-    styles: [`
-                .staff-li> a > img{
-                    width: 200px;
-                    height: 200px;
-                    background: rgb(166, 166, 166);
-                    border: 1px solid #ddd;
-                    border-radius: 4px;
-                    padding: 4px;
-                }
-                
-                .staff-li {
-                    display: inline-block;
-                    float: left;
-                    margin-right: 1px;
-                }
-                
-                .staff-li > p{
-                    text-align: center;
-                }
-                
-                        `],
+    styleUrls: ["app/staff/staff.component.css", "app/style/main.css"],
     providers: [ HttpService ]
 })
 export class StaffComponent implements OnInit {

@@ -1,0 +1,28 @@
+
+.content-image {
+    width: 200px;
+    height: 200px;
+    background: rgb(166, 166, 166);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 3px;
+}
+.staff-li {
+    display: inline-block;
+    float: left;
+    margin-right: 3px;
+}
+.staff-li > p{
+    text-align: center;
+}
+
+.avatar {
+    width: 300px;
+    float: left;
+    padding: 10px;
+
+}
+
+.description{
+    vertical-align: middle;
+}

@@ -8,6 +8,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HistoryComponent } from './history/history.component';
 import { StaffComponent } from './staff/staff.component';
 import { PersonComponent } from './person/person.component';
+import { DanceComponent } from './dance/dance.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'history', component: HistoryComponent},
   { path: 'staff', component: StaffComponent},
   { path: 'person/:id', component: PersonComponent},
+  { path: 'dance/:id', component: DanceComponent},
   { path: 'notfound', component: NotfoundComponent},
 ];
 

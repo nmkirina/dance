@@ -13,9 +13,9 @@ export class HttpService{
    url: string = 'http://serv.dance.local/api/';
    constructor(private http: Http){ }
      
-   getObject(name: string){
+   getObject(name: string, params:string = null){
        
-        let result: Observable<Response> = this.http.post(this.url + name, null, {headers: this.headers})
+        let result: Observable<Response> = this.http.post(this.url + name, params, {headers: this.headers})
                                                 .map((resp:Response)=>resp.json())
                                                 .catch((error:any) =>{return Observable.throw(error);});
         return result;
@@ -43,7 +43,11 @@ export class HttpService{
    
    getPerson(id: string){
        let params = {'id':id};
-       return this.http.post(this.url + 'staffbyid', JSON.stringify(params), {headers: this.headers})
-       .map(res => res.json()).catch((error:any) =>{return Observable.throw(error);});
+       return this.getObject('staffbyid', JSON.stringify(params));
+   }
+   
+   getDance(id: string){
+       let params = {'id':id};
+       return this.getObject('dancebyid', JSON.stringify(params));
    }
 }

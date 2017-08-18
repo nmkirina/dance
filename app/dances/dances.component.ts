@@ -3,8 +3,8 @@ import { HttpService } from '../http.service';
 
 @Component({
     selector: 'dances',
-    templateUrl: "app/html-template/item-with-picture.component.html",
-    styleUrls: [`app/html-template/item-with-picture.component.css`],
+    templateUrl: "app/dances/dances.component.html",
+    styleUrls: ["app/dances/dances.component.css", "app/style/main.css"],
     providers: [HttpService]
 })
 export class DancesComponent implements OnInit {
