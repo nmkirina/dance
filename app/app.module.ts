@@ -32,7 +32,7 @@ const appRoutes: Routes = [
         {path: 'gallery', component: GalleryComponent},
         {path: 'history', component: HistoryComponent},
         {path: 'staff', component: StaffComponent},
-//        {path: 'person', component: PersonComponent},
+        {path: 'staff/person/:id', component: PersonComponent},
         {path: 'news', component: NewsComponent},
         {path: '**', component: NotfoundComponent}
     ];
@@ -59,7 +59,8 @@ const appRoutes: Routes = [
         NewsComponent,
         HistoryComponent,
         StaffComponent,
-        NotfoundComponent
+        NotfoundComponent,
+        PersonComponent
           ],
     bootstrap:    [ AppComponent ]
 })

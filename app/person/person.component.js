@@ -12,14 +12,15 @@ var core_1 = require("@angular/core");
 var http_service_1 = require("../http.service");
 var router_1 = require("@angular/router");
 var PersonComponent = (function () {
-    function PersonComponent(httpService, activateRoute) {
+    function PersonComponent(httpService, activatedRoute) {
         this.httpService = httpService;
-        this.activateRoute = activateRoute;
+        this.activatedRoute = activatedRoute;
+        this.id = activatedRoute.snapshot.params['id'];
+        this.item = { 'fullurl': 'url', 'start_date': 'date' };
     }
     PersonComponent.prototype.ngOnInit = function () {
-        console.log('sdfkgdfsg');
-        //        this.id = this.activateRoute.params['id'];
-        //        this.httpService.getPerson(this.id).subscribe((data) => {console.log(data.result);this.items = data.result;});
+        var _this = this;
+        this.httpService.getPerson(this.id).subscribe(function (data) { console.log(data.result); _this.item = data.result; });
     };
     return PersonComponent;
 }());
@@ -27,11 +28,10 @@ PersonComponent = __decorate([
     core_1.Component({
         selector: 'person',
         templateUrl: "app/person/person.component.html",
-        styles: [" "],
+        styles: [".avatar {\n                        width: 300px;\n                        float: left;\n                        padding: 10px;\n                        \n                        }\n                        \n                .description{\n                vertical-alighn: center;\n                }\n            "],
         providers: [http_service_1.HttpService]
     }),
-    __metadata("design:paramtypes", [http_service_1.HttpService, typeof (_a = typeof router_1.ActivateRoute !== "undefined" && router_1.ActivateRoute) === "function" && _a || Object])
+    __metadata("design:paramtypes", [http_service_1.HttpService, router_1.ActivatedRoute])
 ], PersonComponent);
 exports.PersonComponent = PersonComponent;
-var _a;
 //# sourceMappingURL=person.component.js.map

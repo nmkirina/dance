@@ -1,5 +1,5 @@
     <div *ngFor="let item of items" class="staff-li">
-        <a [routerLink]="['person', item._id]">
+        <a [routerLink]="['person', item._id.$oid]">
         <img src="{{item.fullurl}}">
         </a>
         <p>{{item.name}}</p>

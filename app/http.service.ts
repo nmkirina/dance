@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
-import {Response, Headers, URLSearchParams } from '@angular/http';
+import {Response, Headers } from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -18,9 +18,9 @@ export class HttpService{
         let result: Observable<Response> = this.http.post(this.url + name, null, {headers: this.headers})
                                                 .map((resp:Response)=>resp.json())
                                                 .catch((error:any) =>{return Observable.throw(error);});
-                       
         return result;
    }
+   
    getDances(){
       return this.getObject('dances');
    }
@@ -42,9 +42,8 @@ export class HttpService{
    }
    
    getPerson(id: string){
-       let params =  new URLSearchParams();
-       params.set('id', id);
-       return this.http.post(this.url + 'staff', params.toString(), {headers: this.headers})
+       let params = {'id':id};
+       return this.http.post(this.url + 'staffbyid', JSON.stringify(params), {headers: this.headers})
        .map(res => res.json()).catch((error:any) =>{return Observable.throw(error);});
    }
 }
