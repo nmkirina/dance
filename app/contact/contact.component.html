@@ -1,5 +1,14 @@
-    <h1>{{ title }}</h1>
-    
-    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    <h1>{{ title }}:</h1>
+    <p>МКУ МЦИДД "КАЛЕЙДОСКОП", ул. Детский проезд, 8</p>
+    <agm-map [latitude]="lat_detskyi" [longitude]="lng_detskyi" [zoom]="zoom">
+        <agm-marker [latitude]="lat_detskyi" [longitude]="lng_detskyi"></agm-marker>
     </agm-map>
+    <br>
+    <p>ДМ "Юность", пр. Строителей, 21</p>
+    <agm-map [latitude]="lat_unost" [longitude]="lng_unost" [zoom]="zoom">
+        <agm-marker [latitude]="lat_unost" [longitude]="lng_unost"></agm-marker>
+    </agm-map>
+    <br>
+    <div  id="vk-link">
+        <a [href]="vkLink" target="_blank"><img src="img/vk.png" width="100"></a>
+    </div>

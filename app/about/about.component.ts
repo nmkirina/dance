@@ -3,25 +3,23 @@ import { HttpService } from '../http.service';
 
 @Component({
     selector: 'about',
-    template: `<div id="dances">
-    <div *ngFor="let item of items">
-        <span><h1>{{item.year}}</h1></span>
-        <span>{{item.text}}</span>
+    template: `
+    <img src="{{item.fullurl}}" class="avatar">
+    <div class="person-description">
+        <h2>{{item.name}}</h2>
+        <p>Художественный руководитель</p>
+        <p>{{item.description}}</p>
     </div>
-</div>`,
-    styles: [`#about{
-                position: relative;
-                left: 20px;
-                }`],
+    `,
+    styleUrls: [`app/style/main.css`],
     providers: [ HttpService ]
 })
 export class AboutComponent implements OnInit {
     
-    items: any;
+    item: any;
     constructor(private httpService: HttpService){}
     ngOnInit(){
-        console.log('About');
-        this.httpService.getHistory().subscribe((data) => {this.items = data.result;});
+        this.httpService.getArtDirector().subscribe((data) => {this.item = data.result; console.log(data)});
     }
 }
 

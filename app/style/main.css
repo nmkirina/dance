@@ -26,3 +26,13 @@
 .description{
     vertical-align: middle;
 }
+.avatar {
+        width: 300px;
+        float: left;
+        padding: 10px;
+
+        }
+
+.person-description{
+        vertical-alighn: center;
+}

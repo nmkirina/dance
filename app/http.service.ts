@@ -50,4 +50,8 @@ export class HttpService{
        let params = {'id':id};
        return this.getObject('dancebyid', JSON.stringify(params));
    }
+   
+   getArtDirector(){
+       return this.getObject('artdirector');
+   }
 }

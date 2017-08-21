@@ -28,7 +28,7 @@ PersonComponent = __decorate([
     core_1.Component({
         selector: 'person',
         templateUrl: "app/person/person.component.html",
-        styles: [".avatar {\n                        width: 300px;\n                        float: left;\n                        padding: 10px;\n                        \n                        }\n                        \n                .description{\n                vertical-alighn: center;\n                }\n            "],
+        styleUrls: ["app/style/main.css"],
         providers: [http_service_1.HttpService]
     }),
     __metadata("design:paramtypes", [http_service_1.HttpService, router_1.ActivatedRoute])

@@ -17,8 +17,6 @@ export class NewsComponent implements OnInit {
                              
                             this.items = data.result;
                     });
-                
-        
     }
     toggle(item: any){
         if(item.opened){

@@ -5,17 +5,7 @@ import { ActivatedRoute }from '@angular/router';
 @Component({
     selector: 'person',
     templateUrl: "app/person/person.component.html",
-    styles: [`.avatar {
-                        width: 300px;
-                        float: left;
-                        padding: 10px;
-                        
-                        }
-                        
-                .description{
-                vertical-alighn: center;
-                }
-            `],
+    styleUrls: [`app/style/main.css`],
     providers: [ HttpService ]
 })
 export class PersonComponent implements OnInit {
