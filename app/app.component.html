@@ -12,9 +12,9 @@
         <img src="img/logo-fresky.jpg"  [@visibilityChanged]="visibility">
     </div>
     <div>
-        <main-menu (onChanged)="onChanged($event)"></main-menu>
+        <main-menu (onChanged)="onChanged($event)" (showPages)="showPages($event)"></main-menu>
     </div>
-    <div class="pages">
+    <div class="pages" [@visibilityPagesChanged]="visibilityPages">
         <router-outlet></router-outlet>
     </div>
     <div id="main-phrase">

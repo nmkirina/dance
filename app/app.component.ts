@@ -10,12 +10,19 @@ import { animate, style, trigger, state, transition } from '@angular/animations'
             state('visible', style({ height: '300px', opacity: 1})),
             state('hidden', style({ height: '0px', opacity: 0 })),
             transition('* => *', animate('.5s'))
+        ]),
+        trigger('visibilityPagesChanged', [
+            state('visible', style({ height: '300px', opacity: 1})),
+            state('hidden', style({ height: '0px', opacity: 0 })),
+            transition('hidden => visible', animate('.9s'))
         ])
     ],
 })
 export class AppComponent implements OnInit{ 
     
     visibility: string = 'visible';
+    visibilityPages: string = 'hidden';
+    
     ngOnInit(){
         if(window.location.pathname != '/') {
             this.visibility = 'hidden';
@@ -23,6 +30,11 @@ export class AppComponent implements OnInit{
     }
     onChanged(flag:string){
         this.visibility = flag;
+        this.visibilityPages = 'hidden';
+    }
+    showPages(flag: string){
+        console.log(flag);
+        this.visibilityPages = flag;
     }
 }
 
