@@ -23,7 +23,7 @@ export class DanceComponent implements OnInit
     }
     sendComment(text: string)
     {
-        
+        this.httpService.sendComment(text, this.id).subscribe((data) => {console.log(data.result);});
     }
 }
 

@@ -61,8 +61,8 @@ export class HttpService{
        return this.getObject('artdirector');
     }
    
-   sendComment(text: string)
+   sendComment(text: string, danceid: string)
    {
-       return this.sendParams('comment', {'text': text});
+       return this.sendParams('comment', {'text': text, 'danceid': danceid});
    }
 }

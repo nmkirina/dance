@@ -23,6 +23,7 @@ var DanceComponent = (function () {
         this.httpService.getDance(this.id).subscribe(function (data) { console.log(data.result); _this.item = data.result; });
     };
     DanceComponent.prototype.sendComment = function (text) {
+        this.httpService.sendComment(text, this.id).subscribe(function (data) { console.log(data.result); });
     };
     return DanceComponent;
 }());
