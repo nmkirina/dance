@@ -22,6 +22,8 @@ var DanceComponent = (function () {
         var _this = this;
         this.httpService.getDance(this.id).subscribe(function (data) { console.log(data.result); _this.item = data.result; });
     };
+    DanceComponent.prototype.sendComment = function (text) {
+    };
     return DanceComponent;
 }());
 DanceComponent = __decorate([

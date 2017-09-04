@@ -19,7 +19,8 @@ import { NewsComponent } from './news/news.component';
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
-import {AgmCoreModule} from '@agm/core';
+import { AgmCoreModule } from '@agm/core';
+import { FormsModule } from '@angular/forms';
 
 import 'web-animations-js';
 import 'hammerjs';
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
 @NgModule({
     imports:      [ 
         BrowserModule, 
+        FormsModule,
         BrowserAnimationsModule, 
         RouterModule.forRoot(appRoutes),
         routing,

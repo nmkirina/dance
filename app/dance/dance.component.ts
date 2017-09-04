@@ -8,15 +8,22 @@ import { ActivatedRoute }from '@angular/router';
     styleUrls: ["app/style/main.css"],
     providers: [ HttpService ]
 })
-export class DanceComponent implements OnInit {
+export class DanceComponent implements OnInit 
+{
     item: any;
     id: string;
-    constructor(private httpService: HttpService, private activatedRoute: ActivatedRoute){
+    constructor(private httpService: HttpService, private activatedRoute: ActivatedRoute)
+    {
         this.id = activatedRoute.snapshot.params['id'];
         this.item = {'fullurl': 'url', 'start_date': 'date'};
     }
-    ngOnInit(){
+    ngOnInit()
+    {
         this.httpService.getDance(this.id).subscribe((data) => {console.log(data.result);this.item = data.result;});
+    }
+    sendComment(text: string)
+    {
+        
     }
 }
 

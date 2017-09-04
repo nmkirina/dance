@@ -13,8 +13,7 @@ export class MainMenuComponent {
         let that = this;
         setTimeout(function() {
                     that.showPages.emit('visible');
-                  }, 100);
-        
+                  }, 100);        
     }
 }
 

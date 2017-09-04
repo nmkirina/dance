@@ -14,7 +14,7 @@ import { animate, style, trigger, state, transition } from '@angular/animations'
         trigger('visibilityPagesChanged', [
             state('visible', style({ height: '300px', opacity: 1})),
             state('hidden', style({ height: '0px', opacity: 0 })),
-            transition('hidden => visible', animate('.9s'))
+            transition('hidden => visible', animate('.7s'))
         ])
     ],
 })

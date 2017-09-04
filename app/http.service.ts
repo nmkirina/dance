@@ -21,7 +21,12 @@ export class HttpService{
         return result;
    }
    
-   getDances(){
+   sendParams(method: string, params: any){
+       return this.getObject(method, JSON.stringify(params));
+   }
+   
+   getDances()
+   {
       return this.getObject('dances');
    }
    
@@ -46,12 +51,18 @@ export class HttpService{
        return this.getObject('staffbyid', JSON.stringify(params));
    }
    
-   getDance(id: string){
-       let params = {'id':id};
-       return this.getObject('dancebyid', JSON.stringify(params));
-   }
+   getDance(id: string)
+    {
+       return this.sendParams('dancebyid', {'id':id});
+    }
    
-   getArtDirector(){
+   getArtDirector()
+    {
        return this.getObject('artdirector');
+    }
+   
+   sendComment(text: string)
+   {
+       return this.sendParams('comment', {'text': text});
    }
 }

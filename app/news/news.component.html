@@ -4,7 +4,7 @@
         <p>
         <a (click)=toggle(item)><b>{{item.title}}</b></a>
         </p>
-        <div *ngIf="item.opened">
+        <div *ngIf="item.opened" class="news-text">
             <p><b>{{item.title}}, {{item.date}}</b></p>
             {{item.text}}
         </div>
